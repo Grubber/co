@@ -42,6 +42,7 @@ do
 		*)
 			if [[ "$1" =~ $pattern ]]; then
 				print_result "$1"
+			else echo "Error: $1 should be a number in range [0, 100]."
 			fi
 			shift ;;
 	esac
