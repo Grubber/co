@@ -10,25 +10,28 @@
 	curl -L https://raw.githubusercontent.com/Grubber/co/master/install.sh > install.sh
 	bash install.sh
 	source ~/.bashrc
+	rm install.sh
  	```
 
 - query
 
 	sample: 
 
-	color: #FFFFFF, opacity: 100%
+	color: #FFFFFF, opacity: 85%
 
 	type in terminal
 
 	```
-	co 100
+	co 85
 	```
 
 	output
 
 	|opacity|hex|
 	|---|---|
-    |100|FF|
+    |85|D9|
+
+    so color value string is `#D9FFFFFF`.
 
 	list all:
 
