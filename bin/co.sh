@@ -6,6 +6,7 @@ calculate()
 {
 	p=`echo "scale=2; $1/100" | bc`
 	v=`echo "$p*255" | bc`
+	v=`echo $v | awk '{print int($1+0.5)}'`
 	r=`printf "%.0f" $v`
 }
 
